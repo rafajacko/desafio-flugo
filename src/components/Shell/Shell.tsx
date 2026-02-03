@@ -36,7 +36,6 @@ export function Shell({ children, title, breadcrumb }: ShellProps) {
           boxShadow: "0 18px 40px rgba(17,24,39,.08)",
         }}
       >
-        {/* Sidebar / Topbar */}
         <Box
           sx={{
             p: { xs: 2, md: 3 },
@@ -53,7 +52,6 @@ export function Shell({ children, title, breadcrumb }: ShellProps) {
             borderBottom: { xs: "1px solid #F3F4F6", md: "none" },
           }}
         >
-          {/* Logo (mantém como está - você disse que ela já faz a função de voltar) */}
           <Box
             sx={{
               display: "inline-flex",
@@ -78,7 +76,6 @@ export function Shell({ children, title, breadcrumb }: ShellProps) {
             />
           </Box>
 
-          {/* ✅ Desktop: "Colaboradores" embaixo da logo (apenas texto, não clicável) */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
@@ -99,7 +96,6 @@ export function Shell({ children, title, breadcrumb }: ShellProps) {
             <ChevronRightIcon sx={{ fontSize: 18, color: "#9CA3AF" }} />
           </Box>
 
-          {/* ✅ Mobile: mantém na topbar (direita) */}
           <Stack
             direction="row"
             spacing={1}
@@ -122,7 +118,6 @@ export function Shell({ children, title, breadcrumb }: ShellProps) {
           </Stack>
         </Box>
 
-        {/* Content */}
         <Box
           sx={{
             position: "relative",
